@@ -1,0 +1,12 @@
+D:\codeFirstCrud\MODEL\bin\Debug\netcoreapp3.1\MODEL.deps.json
+D:\codeFirstCrud\MODEL\bin\Debug\netcoreapp3.1\MODEL.runtimeconfig.json
+D:\codeFirstCrud\MODEL\bin\Debug\netcoreapp3.1\MODEL.runtimeconfig.dev.json
+D:\codeFirstCrud\MODEL\bin\Debug\netcoreapp3.1\MODEL.dll
+D:\codeFirstCrud\MODEL\bin\Debug\netcoreapp3.1\MODEL.pdb
+D:\codeFirstCrud\MODEL\obj\Debug\netcoreapp3.1\MODEL.GeneratedMSBuildEditorConfig.editorconfig
+D:\codeFirstCrud\MODEL\obj\Debug\netcoreapp3.1\MODEL.AssemblyInfoInputs.cache
+D:\codeFirstCrud\MODEL\obj\Debug\netcoreapp3.1\MODEL.AssemblyInfo.cs
+D:\codeFirstCrud\MODEL\obj\Debug\netcoreapp3.1\MODEL.csproj.CoreCompileInputs.cache
+D:\codeFirstCrud\MODEL\obj\Debug\netcoreapp3.1\MODEL.dll
+D:\codeFirstCrud\MODEL\obj\Debug\netcoreapp3.1\MODEL.pdb
+D:\codeFirstCrud\MODEL\obj\Debug\netcoreapp3.1\MODEL.genruntimeconfig.cache

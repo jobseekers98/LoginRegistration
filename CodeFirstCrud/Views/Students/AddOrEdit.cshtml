@@ -1,0 +1,87 @@
+﻿@model MODEL.Student 
+@{ 
+    ViewData["Title"] = "AddOrEdit";
+}
+
+<h1>Registration form</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" type="text" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Age" class="control-label"></label>
+                    <input asp-for="Age" required class="form-control" type="text" />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="Collegename" class="control-label"></label>
+                    <input asp-for="Collegename" class="form-control" type="text" />
+                    <span asp-validation-for="Collegename" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" type="text" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                @if (Model.Id > 0)
+                {
+                    <input asp-for="Password" class="form-control"  readonly />
+                }
+                else
+                {
+
+                    <input asp-for="Password"  class="form-control" type="password"  />
+                }
+
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Role" class="control-label"></label>
+                <input asp-for="Role" class="form-control" type="text" />
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" type="checkbox" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                </div>
+                <h6 class="text-danger text-center">@ViewBag.Duplicate</h6>
+                <h6 class="text-danger text-center">@ViewBag.msg</h6>
+
+                @*<div class="form-group col-md-6">
+                <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fa fa-table"></i> Back to List</a>
+            </div>*@
+            </div>
+        </form>
+    </div>
+</div>
+
+
